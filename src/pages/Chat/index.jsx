@@ -8,9 +8,8 @@ const Chat = () => {
   const [users, setUsers] = useState([]);
 
   const fetchUsers = async () => {
-    const { id } = JSON.parse(localStorage.getItem("user"));
 
-    const response = await get(`/user/${id}`);
+    const response = await get(`/user`);
 
     setUsers(response.data);
   };
@@ -20,7 +19,7 @@ const Chat = () => {
   }, []);
 
   useEffect(() => {
-    const pusher = new Pusher("a256e2fc09da7298ea43", {
+    const pusher = new Pusher("b5ad2f998793b8d713c8", {
       cluster: "us2",
     });
 

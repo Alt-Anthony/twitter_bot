@@ -6,11 +6,11 @@ const HeaderLayout = ({ children }) => {
   const user = JSON.parse(localStorage.getItem("user"));
 
   return (
-    <Layout>
+    <Layout theme="light">
       <Header
         style={{
           position: "fixed",
-          zIndex: 1,
+          zIndex: 0,
           width: "100%",
         }}
       >
