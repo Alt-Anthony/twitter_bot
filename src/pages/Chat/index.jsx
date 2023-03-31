@@ -19,7 +19,7 @@ const Chat = () => {
   }, []);
 
   useEffect(() => {
-    const pusher = new Pusher("b5ad2f998793b8d713c8", {
+    const pusher = new Pusher("37c0a396ac889cf222e5", {
       cluster: "us2",
     });
 
